@@ -1,0 +1,2 @@
+import React, { useState } from "react";
+export default function RadioExample() { const [choice,setChoice]=useState(""); return <><input type="radio" value="A" onChange={e=>setChoice(e.target.value)} />A<input type="radio" value="B" onChange={e=>setChoice(e.target.value)} />B<p>Selected: {choice}</p></>; }

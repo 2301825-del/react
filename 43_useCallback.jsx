@@ -1,0 +1,2 @@
+import React,{useState,useCallback} from "react";
+export default function UseCallbackExample(){const[count,setCount]=useState(0);const memoized=useCallback(()=>alert("Clicked"),[]);return<><p>{count}</p><button onClick={()=>setCount(c=>c+1)}>+</button><button onClick={memoized}>Alert</button></>;}

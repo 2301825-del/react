@@ -1,0 +1,2 @@
+import React, { useState } from "react";
+export default function SelectExample() { const [car,setCar]=useState("Volvo"); return <select value={car} onChange={e=>setCar(e.target.value)}><option>BMW</option><option>Volvo</option><option>Audi</option></select>; }

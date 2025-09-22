@@ -1,0 +1,2 @@
+import React,{useMemo,useState} from "react";
+export default function UseMemoExample(){const[num,setNum]=useState(0);const squared=useMemo(()=>num*num,[num]);return<><input type="number" value={num} onChange={e=>setNum(+e.target.value)}/><p>Squared: {squared}</p></>;}

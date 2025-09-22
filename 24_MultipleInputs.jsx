@@ -1,0 +1,2 @@
+import React, { useState } from "react";
+export default function MultiInput() { const [form,setForm]=useState({name:"",age:""}); return <><input name="name" onChange={e=>setForm({...form,[e.target.name]:e.target.value})}/><input name="age" onChange={e=>setForm({...form,[e.target.name]:e.target.value})}/></>; }
